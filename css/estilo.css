@@ -78,43 +78,67 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 /* productos */
 .main-productos{
     display: flex;
-    padding: 10px;
-    margin: 35px;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-items: center;
-    margin-bottom: 25px;
-   }
-.pan-rallado {
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 10px;
+    height: 70vh;
+    background-repeat: no-repeat;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.tostadas {
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 10px;
-}
-.tostadas-semilla{
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 10px;
-}
-.texto {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-   margin-top: 5px;
+.pan-rallado2 {
+   width: 620px;
+   height: 620px;
+   padding: 10px 10px;
+   font-size: 30px;
+   line-height: 46px;
+   background: #6d2b909d;
+   border-radius: 10px;
+   text-align: justify;
    margin-right: 10px;
-   margin-bottom: 12px;
-   margin-left: 15px;
 }
+.pan-rallado2 img {
+    width: 340px;
+    height: 340px;
+    float: left;
+    margin-right:10px;
+    border-radius: 10px;
+}
+.tostadas2 {
+    width: 620px;
+    height: 620px;
+    padding: 10px 10px;
+    font-size: 25px;
+    line-height: 33px;
+    background: #6d2b909d;
+    border-radius: 10px;
+    text-align: justify;
+    margin-right: 10px ;
+}
+.tostadas2 img {
+    width: 320px;
+    height: 350px;
+    float: left;
+    margin-right:10px;
+    border-radius: 10px;
+}
+.tostadas-semilla2 {
+    width: 620px;
+    height: 620px;
+    padding: 10px 10px;
+    font-size: 22px;
+    line-height: 35px;
+    background: #6d2b909d;
+    border-radius: 10px;
+    text-align: justify;
+}
+.tostadas-semilla2 img {
+    width: 360px;
+    height: 350px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
 /* historia */
 h3{
     color: #6d2b90;
@@ -140,7 +164,7 @@ h3{
     background-size: 70%;
     background-position: center;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     height: 50vh;
     padding: 50px;
 }
@@ -159,7 +183,7 @@ h3{
 
 }
 .telefono {
-    background-color: #6d2b903e;
+    background-color: #6d2b9034;
     font-size: 70px;
     text-decoration: underline;
     margin-top: 20px;
@@ -168,7 +192,7 @@ h3{
     margin-bottom: 10px;
 }
 .email {
-    background-color: #6d2b903e;
+    background-color: #6d2b9034;
     font-size: 70px;
     text-decoration: underline;
     margin-top: 20px;
@@ -177,7 +201,7 @@ h3{
     margin-bottom: 10px;
 }
 .direccion {
-    background-color: #6d2b903e;
+    background-color: #6d2b9034;
 font-size: 70px;
 text-decoration: underline;
 margin-top: 20px;
