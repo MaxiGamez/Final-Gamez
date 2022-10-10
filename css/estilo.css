@@ -6,7 +6,13 @@ body {
     width: 100%;
     height: auto;
 }
-
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: #6d2b90;
+}
 header nav{
     margin: auto;
     width: 100%;
@@ -30,6 +36,7 @@ nav ul :hover {
     transform: scale(1.2);
  }
 .nav {
+    display: flex;
     background-color: #6d2b90;
     align-items: center;
     justify-content:center;
@@ -37,14 +44,16 @@ nav ul :hover {
 }
 nav ul li{
     display: flex;
-    border: solid 3px black;
+    flex-direction: row;
+    border: solid 3px #000000;
     padding: 15px;
-    background-color: rgb(241, 230, 69);
+    background-color: #f1e645;
     border-radius: 12px;
     margin: 5px;
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: sans-serif ;
  }
 a {
     color: #000000;
@@ -56,46 +65,41 @@ p a {
     text-align: justify;
 }
 /* estilo cuerpo de pagina */
+
 /* inicio */
-.conteiner3{
+main h1 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.conteiner3 .titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
+    font-size: 70px;
     color: #6d2b90;
-    font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    text-decoration: none;
+    text-align: justify;
+ justify-content: center;
+ margin-top: 15px;
+  margin-bottom: 15px;
 }
-.imagenes-cuerpo {
-    display: flex; 
-    margin-top: 50px;
-    margin-bottom: 50px;  
-}
-.tostadas {
+#demo {
     display: flex;
-    margin: auto;
-    height: auto;
-    width: 400px;
-    height: 400px;
-    margin-right: 80px;
+    flex-direction: column-reverse;
+    align-items: center;
 }
-.tostadas :hover {
-    transform: scale(1.1);
-}
-.pan {
+.carousel-inner {
     display: flex;
-    margin: auto;
-    height: auto;
-    width: 400px;
-    height: 400px;
-    margin-left: 80px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 200px;
+}
+.carousel-item :active {
+    width: 550px;
+    height: 550px;
+}
+.carousel-item {
+    width: 550px;
+    height: 550px;
+}
+.indicadores {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* productos */
@@ -243,42 +247,36 @@ margin-bottom: 10px;
     align-self: center;
 }
 /* estilo pie de pagina*/
-#pie {
+.pie-pagina {
+    background-color: #f1e645;
     display: flex;
-    flex-direction: column-reverse;
-    background-color: #f9e84f;
-    width: 100%;
     justify-content: space-around;
-}
-.pie-pagina{
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    margin: 0px 50px;
-    height: auto;
+    margin: auto; 
+
 }
-.cont {
+h2 {
     display: flex;
-    color: #000000;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: sans-serif;
     font-size: 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .list {
-    color: #5a2190;
-    font-size: 20px;
-    font-family: fantasy;
-    list-style: none;
+    display: flex;
+    margin-top: 1em;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
 }
-.list a {
-    color: #5a2190;
-    font-family:fantasy;
-    font-size: 20px;
+.logo2 {
+    display: flex;
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
+    margin-left: 2em;
 }
-
 /* media queries*/
 
 @media screen and (max-width: 450px) {
@@ -288,6 +286,14 @@ margin-bottom: 10px;
     height: auto;
 }
 /* encabezado pagina */
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: #6d2b90;
+}
 header nav{
     margin: auto;
     width: 100%;
@@ -297,70 +303,96 @@ header nav{
 }
 header img {
     margin: auto;
-    width: 50%;
-    height: auto;
+    width: 20em;
+    height: 20em;
     display: flex;
     justify-content: center;
 }
-.nav ul{
+nav ul{
     display: flex;
     flex-direction: column;
+    padding: auto;
     flex-wrap: nowrap;
     align-items: center;
+    margin-right: 40px;
+    margin-top: 10px;
 }
-.nav {
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #000000;
+    font-family:monospace ;
+    padding: 5px;
+ } 
+/* cuerpo inicio */
+main h1 {
+    display: flex;
+    font-size: 35px;
+    font-family:monospace ;
+    text-align: justify;
+    justify-content: center;
+}
+#demo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.carousel-inner {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 40px;
+}
+.carousel-item :active {
+    width: 350px;
+    height: 350px;
+}
+.carousel-item {
+    width: 350px;
+    height: 350px;
+}
+.carousel-control-prev{
+    margin: auto;
+    height: auto;
+    width: auto;
+}
+.carousel-control-prev-icon {
+background-color: #6d2b90;
+}
+.carousel-control-next {
+    margin: auto;   
+}
+.carousel-control-next-icon {
     background-color: #6d2b90;
 }
-/* cuerpo inicio */
-.conteiner3{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.conteiner3 .titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 30px;
-    color: #6d2b90;
-    font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.imagenes-cuerpo {
-    display: flex; 
-    flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 40px;  
-}
-.tostadas {
-    display: flex;
-    margin: auto;
-    height: auto;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 30px;
-}
-.pan {
-    display: flex;
-    margin: auto;
-    height: auto;
-    width: 300px;
-    height: 300px;
-   margin-top: 30px;
-}
 /* pie pagina */
-#pie {
-    justify-content: center;   
-}
 .pie-pagina {
-   margin: auto;
-   width: 100%;
-   height: auto;
-flex-direction: column;
+    background-color: #f1e645;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto; 
+    margin-top: 3em;
 }
-footer h2 {
-    font-size: 59px;
+h2 {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+.list {
+    display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.logo2 {
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+    margin:auto;
+    align-items:center ;
 }
