@@ -103,7 +103,30 @@ main h1 {
 }
 
 /* productos */
-.main-productos{
+.accordion-button {
+    font-size: 30px; 
+    font-family: sans-serif;
+    background-color: #f1e645; 
+}
+.pan-rallado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.accordion-body {
+    font-size: 20px;
+}
+.tostadas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tostadas-semillas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* .main-productos{
     display: flex;
     height: 70vh;
     background-repeat: no-repeat;
@@ -116,7 +139,7 @@ main h1 {
    width: 620px;
    height: 620px;
    padding: 10px 10px;
-   font-size: 30px;
+   font-size: 26px;
    line-height: 46px;
    background: #6d2b909d;
    border-radius: 10px;
@@ -134,7 +157,7 @@ main h1 {
     width: 620px;
     height: 620px;
     padding: 10px 10px;
-    font-size: 25px;
+    font-size: 21px;
     line-height: 33px;
     background: #6d2b909d;
     border-radius: 10px;
@@ -152,7 +175,7 @@ main h1 {
     width: 620px;
     height: 620px;
     padding: 10px 10px;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 35px;
     background: #6d2b909d;
     border-radius: 10px;
@@ -164,7 +187,7 @@ main h1 {
     float: left;
     margin-right: 10px;
     border-radius: 10px;
-}
+} */
 
 /* historia */
 h3{
@@ -253,8 +276,8 @@ margin-bottom: 10px;
     justify-content: space-around;
     flex-direction: row;
     margin: auto; 
-
-}
+    background-image: linear-gradient(180deg, #6d2b90, #f1e645);
+  }
 h2 {
     display: flex;
     margin-top: 1em;
@@ -395,4 +418,30 @@ h2 {
     justify-content: center;
     margin:auto;
     align-items:center ;
+}
+/* Cuerpo productos */
+.accordion-button {
+    font-size: 25px; 
+    font-family: sans-serif;
+    background-color: #f1e645;
+    margin: auto; 
+}
+.pan-rallado {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.accordion-body {
+    font-size: 20px;
+}
+.tostadas {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.tostadas-semillas {
+    display: flex;
+    justify-content: center;
+   width: auto;
+   height: auto;
 }

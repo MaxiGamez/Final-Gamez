@@ -7,82 +7,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- titulo de mi pagina -->
   <title>Intipan</title>
+  <!-- link boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   <!-- hoja de estilo -->
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
-  <!-- encabezado de pagina -->
-  <header>
-    <!-- listas -->
-    <div class="imagen">
-      <img class="logo" src="../img/logo circulo.png" width="350" height="250" alt="logo circulo">
-    </div>
-    <nav id="letras-navegador">
-      <ul>
-        <li><a href="../index.html">inicio</a>
-        </li>
-        <li><a href="QuienesSomos.html">quienes somos</a>
-        </li>
-        <li><a href="Contacto.html">contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- cuerpo de pagina -->
-  <main>
+  <div class="contenedor">
+    <!-- encabezado de pagina -->
     <section>
-      <div class="main-productos">
-        <div class="pan-rallado2">
-          <img src="../img/intipan pan rallado.jpg" alt="pan rallado">
-          <p>El pan rallado viene presentado en un pouch x 500g y la caja madre contiene 14 unidades.
-            Tiene la ventaja de no contar con ningun alergeno alimentario(leche,huevo,soja,mani,etc.),cero grasas trans,vegano y sin tacc.Esto lo hace apto para personas celiacas, intolerantes a las harinas o alergicos a la lactosa, huevo,
-            soja,etc.
-          </p>
+      <header>
+        <div class="encabezado">
+          <img src="../img/logo circulo.png" alt="logo circulo">
+          <nav>
+            <ul>
+              <li><a href="../index.html">inicio</a>
+              </li>
+              <li><a href="QuienesSomos.html">quienes somos</a>
+              </li>
+              <li><a href="Contacto.html">contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="tostadas2">
-          <img src="../img/intipan tostadas.jpeg" alt="tostadas">
-          <p>Las tostadas vienen presentadas en un pack de 150g que contienen 3 pouchs individuales con 8
-            tostadas cada uno(50g).Se pueden vender directamente el pack x3 como asi tambien el pouch individial,ya que
-            los paquetes internos tambien cuentan con toda la informacion del producto para ofrecer en el canal gastronomico como una
-            porcion,la caja madre contiene 18 packs x3.
-            Tambien como el pan rallado tiene la ventaja de no contar con ningun alergeno alimentario
-            (leche,huevo,soja,mani,etc.),cero grasas trans,vegano y sin tacc.
-            Esto lo hace apto para personas celiacas,intolerantes a las harinas o alergicos a la lactosa, huevo,
-            soja,etc.
-          </p>
+      </header>
+    </section>
+
+    <!-- cuerpo de pagina -->
+    <main>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Pan rallado
+            </button>
+          </h2>
+          <div class="pan-rallado">
+          <img src="../img/intipan pan rallado.jpg" width="500" height="500" alt="pan rallado">
         </div>
-        <div class="tostadas-semilla2">
-          <img src="../img/tostadas con semillas.jpeg" alt="tostadas semillas">
-          <p>Estas tostadas con semillas son un nuevo producto al igual que las comunes vienen presentadas
-            en un pack de 150g que contienen 3 pouchs individuales con 8 tostadas casa uno(50g).
-            Se pueden vender directamente el pack x3 como asi tambien el pouch individial,ya que los paquetes internos
-            tambien cuentan con toda la informacion del producto para ofrecer en el canal gastronomico como una
-            porcion,la caja madre contiene 18 packs x3.
-            Tambien como el pan rallado tiene la ventaja de no contar con ningun alergeno alimentario
-            (leche,huevo,soja,mani,etc.),cero grasas trans, vegano y sin tacc.
-            Esto lo hace apto para personas celiacas, intolerantes a las harinas o alergicos a la
-            lactosa,huevo,soja,etc.
-          </p>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Sus caracteristicas son:</strong> <p> El pan rallado viene presentado en un pouch x 500g y la caja madre contiene 14 unidades.
+              Tiene la ventaja de no contar con ningun alergeno alimentario(leche,huevo,soja,mani,etc.),cero grasas
+              trans,vegano y sin tacc. Esto lo hace apto para personas celiacas, intolerantes a las harinas o alergicos a
+              la lactosa, huevo,soja,etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tostadas
+            </button>
+          </h2>
+          <div class="tostadas">
+          <img src="../img/intipan tostadas.jpeg" width="400" height="550" alt="tostadas">
+        </div>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Sus caracteristicas son:</strong><p>Las tostadas vienen presentadas en un pack de 150g que contienen 3 pouchs individuales con 8
+                tostadas cada uno(50g).Se pueden vender directamente el pack x3 como asi tambien el pouch individial,ya
+                que
+                los paquetes internos tambien cuentan con toda la informacion del producto para ofrecer en el canal
+                gastronomico como una
+                porcion,la caja madre contiene 18 packs x3.
+                Tambien como el pan rallado tiene la ventaja de no contar con ningun alergeno alimentario
+                (leche,huevo,soja,mani,etc.),cero grasas trans,vegano y sin tacc.
+                Esto lo hace apto para personas celiacas,intolerantes a las harinas o alergicos a la lactosa, huevo,
+                soja,etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Tostadas con semillas
+            </button>
+          </h2>
+          <div class="tostadas-semillas">
+          <img src="../img/tostadas con semillas.jpeg" width="700" height="550" alt="tostadas semillas">
+        </div>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Sus caracteristicas son:</strong> <p>Estas tostadas con semillas son un nuevo producto al igual que las comunes vienen presentadas
+              en un pack de 150g que contienen 3 pouchs individuales con 8 tostadas casa uno(50g).
+              Se pueden vender directamente el pack x3 como asi tambien el pouch individial,ya que los paquetes internos
+              tambien cuentan con toda la informacion del producto para ofrecer en el canal gastronomico como una
+              porcion,la caja madre contiene 18 packs x3.
+              Tambien como el pan rallado tiene la ventaja de no contar con ningun alergeno alimentario
+              (leche,huevo,soja,mani,etc.),cero grasas trans, vegano y sin tacc.
+              Esto lo hace apto para personas celiacas, intolerantes a las harinas o alergicos a la
+              lactosa,huevo,soja,etc.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
-  <!-- pie de pagina -->
-  <footer>
-    <section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
       <div class="pie-pagina">
+
         <h2>Contactanos</h2>
-        <ul>
-          <li>Tel: 03514786995</li>
-          <li>Mail: contacto.intipan@gmail.com</li>
-          <li>Direccion: diagonal ica 1394 cordoba capital</li>
-          <a href="https://www.instagram.com/intipansintacc/" target="_blank">instagram</a>
-        </ul>
-        <img class="logo2" src="../img/logo sin tacc 2.png" width="60" height="60" alt="logo-sin-tacc">
+
+        <div class="list">
+          <ul>
+            <li>Tel: 03514786995</li>
+            <li>Mail: contacto.intipan@gmail.com</li>
+            <li>Direccion: diagonal ica 1394 cordoba capital</li>
+            <a href="https://www.instagram.com/intipansintacc/" target="_blank">instagram</a>
+          </ul>
+        </div>
+        <div class="logo2">
+          <img src="../img/logo sin tacc 2.png" width="60" height="60" alt="logo-sin-tacc">
+        </div>
       </div>
-    </section>
-  </footer>
+    </footer>
+  </div>
+  <!-- link JS boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
