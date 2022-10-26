@@ -1,0 +1,32 @@
+// Main-historia
+.main-historia{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    background-image: url(../img/campo-trigo.jpg);
+    background-size: cover;
+    max-width: 100%;
+    margin: 0%;
+
+    h3{
+        grid-row: 1 / 2;
+        grid-column: 2 / 6;
+        font-size: 4.5em;
+        font-weight: $fw;
+        color: $fondo1;
+        margin-left: 5em;
+    }
+
+    .historia{
+        grid-column: 1 / 10;
+        grid-row: 2 / 4;
+    }
+    p{
+        color: $color;
+        background-color: #e9e98f6d;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 40px;
+        font-weight: $fw;
+    }
+}

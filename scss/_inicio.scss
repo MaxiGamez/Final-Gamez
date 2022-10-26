@@ -1,0 +1,53 @@
+// Main-incio 
+.menu-inicio {
+    margin: 0%;
+    background-image: url(../img/campo-trigo.jpg);
+    background-size: cover;
+    max-width: 100%;
+    h1{
+        @include flex-center;
+        font-size: $fs;
+        color: $fondo1;
+        font-weight: $fw;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        
+        div{
+            justify-items: center;
+            border: solid 1em #f1e6458e;
+            margin: 2em;
+            border-radius: 4em;
+        }
+        img {
+            width: 100%;
+            border-radius: 3em;
+        }
+    }
+    h5{
+        @include flex-center;
+        font-size: $fs;
+        color: $fondo1;
+        font-weight: $fw;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .galeria2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        grid-template-rows: minmax(30px, auto);
+        
+        div{
+            justify-items: center;
+            margin: 2em;
+        }
+        img {
+            width: 100%;
+            border-radius: 4em;
+        }
+    }
+
+}

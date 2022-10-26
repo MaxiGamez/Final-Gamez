@@ -1,0 +1,43 @@
+// Encabezado
+header {
+    background-color: $fondo1;
+    @include flex-center;
+    
+    img {
+        height: 350px;
+        width: 350px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+.nav {
+     @include flex-center;
+    cursor: pointer;
+    background-color: $fondo2;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+    &:hover{
+        background-color: $fondo1;
+    
+    }
+
+    .nav-tabs{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 3em;
+    }
+    .nav-link{
+     @include flex-row;
+     
+        margin-left: 1em;
+        margin-right: 1em;
+        color: $color;
+
+    }
+}

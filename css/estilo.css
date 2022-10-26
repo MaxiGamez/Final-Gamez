@@ -58,7 +58,7 @@ header img:hover {
 /* inicio */
 .menu-inicio {
     margin: 0;
-    background-image: url(../img/campo\ trigo.jpg);
+    background-image: url(../img/campo-trigo.jpg);
     background-size: cover;
     max-width: 100%;
 }
@@ -168,7 +168,7 @@ main {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
-    background-image: url(../img/campo\ trigo.jpg);
+    background-image: url(../img/campo-trigo.jpg);
     background-size: cover;
     max-width: 100%;
     margin: 0%;
@@ -200,7 +200,7 @@ main {
 /* contacto */
 .contacto {
     height: 80vh;
-    background-image: url(../img/campo\ trigo.jpg);
+    background-image: url(../img/campo-trigo.jpg);
     background-size: cover;
     max-width: 100%;
     margin: auto;
@@ -273,14 +273,14 @@ main {
     margin-top: 1em;
 }
 
-.pie-pagina img {
+.pie-contactos img {
     width: 50px;
     height: 50px;
 }
 
 /* Clientes */
 .main-clientes {
-    background-image: url(../img/campo\ trigo.jpg);
+    background-image: url(../img/campo-trigo.jpg);
     background-size: cover;
 
 }
@@ -357,7 +357,7 @@ main {
 
 }
 
-/* media queries*/
+/* media querys*/
 
 @media screen and (max-width: 450px) {
     #contenedor {
@@ -403,7 +403,7 @@ main {
     /* menu inicio */
     .menu-inicio {
         margin: 0;
-        background-image: url(../img/campo\ trigo.jpg);
+        background-image: url(../img/campo-trigo.jpg);
         background-size: auto;
         max-width: 100%;
     }

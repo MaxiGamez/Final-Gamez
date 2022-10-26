@@ -1,0 +1,276 @@
+// mediquerys
+@media screen and (max-width: 450px) {
+    #contenedor {
+        display: grid;
+        grid-column: auto;
+        align-items: center;
+        margin: 0%;
+    }
+
+    // encabezado
+    header {
+        @include flex-item;
+
+        img {
+            height: 250px;
+            width: 250px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .nav {
+            @include flex-center-column;
+            align-items: center;
+            margin-bottom: 1em;
+
+            .nav-tabs {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 1em;
+            }
+
+            .nav-link {
+                margin: auto;
+                align-items: center;
+            }
+        }
+    }
+
+    // menu-inicio
+    .menu-inicio {
+        margin: 0;
+        background-image: url(../img/campo-trigo.jpg);
+        background-size: auto;
+        max-width: 100%;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .galeria {
+            div {
+                justify-items: center;
+                margin: 1em
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h5 {
+            font-size: 30px;
+            font-weight: $fw;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .galeria2 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+            grid-template-rows: minmax(20px, auto);
+
+            div {
+                justify-items: center;
+                margin: 1em;
+            }
+
+            img {
+                width: 100%;
+                margin: auto;
+                border-radius: 2em;
+            }
+        }
+    }
+
+    // pie-pagina
+    .pie-pagina {
+        @include flex-item;
+
+        h2 {
+            font-size: 40px;
+            margin: 0%;
+            font-weight: 700;
+            margin-top: 1em;
+        }
+
+        .list {
+            font-size: 20px;
+            color: $color;
+            margin-top: 1em;
+        }
+
+        .logo2 {
+            width: auto;
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+    }
+
+    // main-productos
+    main {
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        .accordion-item {
+      
+
+            .accordion-body {
+                strong {
+                    color: $color;
+                    font-weight: none;
+                    font-size: 25px;
+                }
+
+                p {
+
+                    font-size: none;
+                    color: $color;
+                    font-size: 20px;
+                }
+            }
+
+            .productos-main {
+                @include flex-center-column;
+                width: 300px;
+                height: 300px;
+                margin-left: 5em;
+            }
+
+            .accordion-item {
+                margin: 0%;
+            }
+        }
+
+        // main-historia
+        .main-historia {
+            @include flex-center-column;
+
+            .historia {
+                margin-left: 1em;
+                margin-right: 1em;
+
+                p {
+                    font-size: 20px;
+                    font-weight: $fw;
+                }
+            }
+
+            h3 {
+                @include flex-item;
+                font-size: 3em;
+                font-weight: $fw;
+                margin: 0;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+
+        // main-contacto
+        .contacto {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contenido {
+                h5 {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 1em;
+                    font-size: 1.5em;
+                    font-weight: $fw;
+                }
+
+                .inti ul {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5em;
+                    font-weight: $fw;
+                    background-color: #6d2b907c;
+                    margin-top: 2em;
+                }
+
+                .ubicacion {
+                    @include flex-center-column;
+                    align-content: center;
+                    background-color: #6d2b907c;
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+
+                .mapa {
+                    @include flex-center-column;
+                    width: 150px;
+                    height: 150px;
+                    margin-bottom: 1em;
+                }
+
+                .instagram {
+                    justify-content: center;
+                    background-color: #6d2b907c;
+
+                }
+            }
+        }
+
+        .pie-contactos {
+            height: 30vh;
+            @include flex-item;
+
+            p {
+                justify-content: center;
+                font-size: 1.5em;
+                font-weight: 600;
+                text-orientation: sideways-right;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        // main-clientes
+        .main-clientes {
+            @include flex-center-column;
+            margin: auto;
+            background-image: none;
+            background-color: #6d2b9066;
+
+            h6 {
+                @include flex-center-column;
+                font-size: 35px;
+                font-weight: $fw;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 1em;
+            }
+
+            .grid-container {
+                @include flex-item;
+
+
+                div {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-bottom: 1em;
+                    margin-top: 1em;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

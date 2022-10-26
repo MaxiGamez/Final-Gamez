@@ -1,0 +1,34 @@
+$fondo1:#6d2b90;
+$fondo2:#f1e645;
+$color:#000000;
+$fs:80px;
+$fw:700;
+// mixins
+
+@mixin sizes($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin color-fondo {
+    background-color: $fondo1;
+    background-color: $fondo2;
+}
+@mixin flex-center{
+display: flex;
+justify-content: center;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
