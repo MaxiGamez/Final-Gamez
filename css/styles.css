@@ -61,15 +61,16 @@ header {
 
 .menu-inicio {
   margin: 0%;
-  background-image: url(../img/campo-trigo.jpg);
-  background-size: cover;
+  background-image: url(../img/fondomarron.jpg);
+  background-size: 100%;
   max-width: 100%; }
   .menu-inicio h1 {
     display: flex;
     justify-content: center;
     font-size: 80px;
     color: #6d2b90;
-    font-weight: 700; }
+    font-weight: 700;
+    background-color: #f1e6458e; }
   .menu-inicio .galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -87,6 +88,7 @@ header {
     justify-content: center;
     font-size: 80px;
     color: #6d2b90;
+    background-color: #f1e6458e;
     font-weight: 700;
     margin-top: 1em;
     margin-bottom: 1em; }
@@ -97,33 +99,66 @@ header {
     grid-template-rows: minmax(30px, auto); }
     .menu-inicio .galeria2 div {
       justify-items: center;
-      margin: 2em; }
+      border: solid 1em #f1e6458e;
+      margin: 2em;
+      border-radius: 4em; }
     .menu-inicio .galeria2 img {
       width: 100%;
-      border-radius: 4em; }
+      border-radius: 3em; }
+
+main {
+  margin: 0%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  main .accordion-button {
+    font-size: 30px;
+    font-family: sans-serif;
+    background-color: #6d2b90ac;
+    color: #000000; }
+  main .accordion-item .accordion-body strong {
+    font-size: 2em;
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px; }
+  main .accordion-item .accordion-body p {
+    font-size: em;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #c3b445ba; }
+  main .productos-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    height: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: 40em; }
 
 .main-historia {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   justify-content: center;
-  background-image: url(../img/campo-trigo.jpg);
-  background-size: cover;
-  max-width: 100%;
+  background-image: url(../img/celiacos.jpg);
+  background-size: 110%;
   margin: 0%; }
   .main-historia h3 {
     grid-row: 1 / 2;
     grid-column: 2 / 6;
-    font-size: 4.5em;
+    font-size: 5em;
     font-weight: 700;
     color: #6d2b90;
-    margin-left: 5em; }
+    margin-left: 5em;
+    margin-top: 1em; }
   .main-historia .historia {
     grid-column: 1 / 10;
     grid-row: 2 / 4; }
   .main-historia p {
     color: #000000;
-    background-color: #e9e98f6d;
+    background-color: #c3b445c4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
     font-weight: 700; }
@@ -132,7 +167,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-image: url(../img/campo-trigo.jpg);
+  background-image: url(../img/celiacos.jpg);
   background-size: cover;
   max-width: 100%;
   margin: 0%; }
@@ -150,24 +185,31 @@ header {
     font-weight: 700;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000;
-    background-color: #6d2b906e;
+    background-color: #c3b445c4;
     margin-top: 2em; }
   .contacto .contenido .ubicacion {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
-    align-content: center;
-    flex-wrap: nowrap;
-    background-color: #6d2b9058;
-    font-size: 2.5em;
+    background-color: #c3b445c4;
+    font-size: 3em;
     color: #000000;
     font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center; }
+  .contacto .contenido .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
     margin-top: 1em;
     margin-bottom: 1em; }
   .contacto .contenido .instagram {
     display: flex;
     justify-content: center;
-    background-color: #6d2b9058;
+    background-color: #c3b445c4;
     margin-bottom: 1em; }
 
 .pie-contactos {
@@ -191,7 +233,7 @@ header {
     height: 150px; }
 
 .main-clientes, main .accordion-item {
-  background-image: url(../img/campo-trigo.jpg);
+  background-image: url(../img/celiacos.jpg);
   background-size: cover;
   margin: 0%; }
   .main-clientes h6, main .accordion-item h6 {
@@ -223,36 +265,6 @@ header {
       .main-clientes .grid-container div img, main .accordion-item .grid-container div img {
         width: 100%; }
 
-main {
-  margin: 0%;
-  margin-top: 1em;
-  margin-bottom: 1em; }
-  main .accordion-button {
-    font-size: 30px;
-    font-family: sans-serif;
-    background-color: #6d2b90ac;
-    color: #000000; }
-  main .accordion-item .accordion-body strong {
-    font-size: 1em;
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px; }
-  main .accordion-item .accordion-body p {
-    font-size: 1em;
-    color: #000000;
-    font-weight: 500;
-    font-size: 20px; }
-  main .productos-main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    height: 50%;
-    width: 500px;
-    height: 500px;
-    margin-left: 40em; }
-
 @media screen and (max-width: 450px) {
   #contenedor {
     display: grid;
@@ -283,8 +295,8 @@ main {
         align-items: center; }
   .menu-inicio {
     margin: 0;
-    background-image: url(../img/campo-trigo.jpg);
-    background-size: auto;
+    background-image: url(../img/fondomarron.jpg);
+    background-size: 100%;
     max-width: 100%; }
     .menu-inicio h1 {
       font-size: 40px;
@@ -293,9 +305,10 @@ main {
       margin-bottom: 1em; }
     .menu-inicio .galeria div {
       justify-items: center;
-      margin: 1em; }
+      margin: 1em;
+      border: none; }
     .menu-inicio .galeria img {
-      width: 100%; }
+      border-radius: 2em; }
     .menu-inicio h5 {
       font-size: 30px;
       font-weight: 700;
@@ -306,10 +319,9 @@ main {
       gap: 0;
       grid-template-rows: minmax(20px, auto); }
       .menu-inicio .galeria2 div {
-        justify-items: center;
-        margin: 1em; }
+        margin: 1em;
+        border: none; }
       .menu-inicio .galeria2 img {
-        width: 100%;
         margin: auto;
         border-radius: 2em; }
   .pie-pagina {
@@ -332,121 +344,122 @@ main {
       margin: 0%;
       justify-content: center;
       margin-bottom: 2em; }
-  main {
-    margin-top: 1em;
-    margin-bottom: 1em; }
-    main .accordion-item .accordion-body strong {
-      color: #000000;
-      font-weight: none;
-      font-size: 25px; }
-    main .accordion-item .accordion-body p {
-      font-size: none;
-      color: #000000;
-      font-size: 20px; }
-    main .accordion-item .productos-main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 300px;
-      height: 300px;
-      margin-left: 5em; }
-    main .accordion-item .accordion-item {
-      margin: 0%; }
-    main .main-historia {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      main .main-historia .historia {
-        margin-left: 1em;
-        margin-right: 1em; }
-        main .main-historia .historia p {
-          font-size: 20px;
-          font-weight: 700; }
-      main .main-historia h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 3em;
-        font-weight: 700;
-        margin: 0;
-        margin-top: 1em;
-        margin-bottom: 1em; }
-    main .contacto {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      main .contacto .contenido h5 {
-        display: flex;
-        justify-content: center;
-        margin-left: 1em;
-        font-size: 1.5em;
+  main .accordion-item .accordion-body strong {
+    color: #000000;
+    font-weight: none;
+    font-size: 25px; }
+  main .accordion-item .accordion-body p {
+    font-size: none;
+    color: #000000;
+    font-size: 20px; }
+  main .accordion-item .productos-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 5em; }
+  main .accordion-item .accordion-item {
+    margin: 0%; }
+  .main-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondomarron.jpg); }
+    .main-historia .historia {
+      margin-left: 1em;
+      margin-right: 1em; }
+      .main-historia .historia p {
+        font-size: 20px;
         font-weight: 700; }
-      main .contacto .contenido .inti ul {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5em;
-        font-weight: 700;
-        background-color: #6d2b907c;
-        margin-top: 2em; }
-      main .contacto .contenido .ubicacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        background-color: #6d2b907c;
-        font-size: 1.5em;
-        margin-bottom: 1em; }
-      main .contacto .contenido .mapa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 150px;
-        height: 150px;
-        margin-bottom: 1em; }
-      main .contacto .contenido .instagram {
-        justify-content: center;
-        background-color: #6d2b907c; }
-    main .pie-contactos {
-      height: 30vh;
+    .main-historia h3 {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      main .pie-contactos p {
-        justify-content: center;
-        font-size: 1.5em;
-        font-weight: 600;
-        text-orientation: sideways-right; }
-      main .pie-contactos img {
-        width: 100px;
-        height: 100px; }
-    main .main-clientes, main .accordion-item {
+      align-items: center;
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      background-color: #f1e6458e; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondomarron.jpg);
+    background-size: auto;
+    margin: 0%; }
+    .contacto .contenido h5 {
+      display: flex;
+      justify-content: center;
+      font-size: 2em;
+      color: #6d2b90;
+      font-weight: 700;
+      margin-top: 1em;
+      background-color: #f1e6458e; }
+    .contacto .contenido .inti ul {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5em;
+      margin-top: 1em;
+      color: #000000; }
+    .contacto .contenido .ubicacion {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: auto;
-      background-image: none;
-      background-color: #6d2b9066; }
-      main .main-clientes h6, main .accordion-item h6 {
-        display: flex;
+      align-content: center;
+      font-size: 1.5em; }
+    .contacto .contenido .mapa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 200px;
+      height: 200px; }
+    .contacto .contenido .instagram {
+      justify-content: center;
+      background-color: #f1e64582; }
+  .pie-contactos {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pie-contactos p {
+      justify-content: center;
+      font-size: 1.5em;
+      font-weight: 600; }
+    .pie-contactos img {
+      width: 60px;
+      height: 60px; }
+  .main-clientes, main .accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondomarron.jpg);
+    background-size: contain;
+    margin: 0%; }
+    .main-clientes h6, main .accordion-item h6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 35px;
+      font-weight: 900;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 1em;
+      color: #000000; }
+    .main-clientes .grid-container, main .accordion-item .grid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-clientes .grid-container div, main .accordion-item .grid-container div {
         flex-direction: column;
-        justify-content: center;
-        font-size: 35px;
-        font-weight: 700;
-        margin-top: 1em;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 1em;
-        margin-left: 1em; }
-      main .main-clientes .grid-container, main .accordion-item .grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        main .main-clientes .grid-container div, main .accordion-item .grid-container div {
-          flex-direction: column;
-          text-align: center;
-          padding: 10px;
-          font-size: 30px;
-          font-weight: 600;
-          margin-bottom: 1em;
-          margin-top: 1em; }
-          main .main-clientes .grid-container div img, main .accordion-item .grid-container div img {
-            height: 50px;
-            width: 50px; } }
+        margin-top: 1em; }
+        .main-clientes .grid-container div img, main .accordion-item .grid-container div img {
+          height: 80px;
+          width: 80px; } }

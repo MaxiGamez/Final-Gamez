@@ -1,14 +1,15 @@
 // Main-incio 
 .menu-inicio {
     margin: 0%;
-    background-image: url(../img/campo-trigo.jpg);
-    background-size: cover;
+   background-image: url(../img/fondomarron.jpg);
+   background-size:100%;
     max-width: 100%;
     h1{
         @include flex-center;
         font-size: $fs;
         color: $fondo1;
         font-weight: $fw;
+        background-color:#f1e6458e ;
     }
     .galeria {
         display: grid;
@@ -30,6 +31,7 @@
         @include flex-center;
         font-size: $fs;
         color: $fondo1;
+        background-color: #f1e6458e;
         font-weight: $fw;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -42,11 +44,13 @@
         
         div{
             justify-items: center;
+            border: solid 1em #f1e6458e;
             margin: 2em;
+            border-radius: 4em;
         }
         img {
             width: 100%;
-            border-radius: 4em;
+            border-radius: 3em;
         }
     }
 

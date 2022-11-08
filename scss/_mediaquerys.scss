@@ -39,8 +39,8 @@
     // menu-inicio
     .menu-inicio {
         margin: 0;
-        background-image: url(../img/campo-trigo.jpg);
-        background-size: auto;
+        background-image: url(../img/fondomarron.jpg);
+        background-size: 100%;
         max-width: 100%;
 
         h1 {
@@ -53,11 +53,12 @@
         .galeria {
             div {
                 justify-items: center;
-                margin: 1em
+                margin: 1em;
+                border: none;
             }
 
             img {
-                width: 100%;
+                border-radius: 2em;
             }
         }
 
@@ -74,12 +75,11 @@
             grid-template-rows: minmax(20px, auto);
 
             div {
-                justify-items: center;
                 margin: 1em;
+                border: none;
             }
 
             img {
-                width: 100%;
                 margin: auto;
                 border-radius: 2em;
             }
@@ -113,13 +113,10 @@
         }
     }
 
-    // main-productos
+    // menu-productos
     main {
-        margin-top: 1em;
-        margin-bottom: 1em;
-
         .accordion-item {
-      
+         
 
             .accordion-body {
                 strong {
@@ -147,130 +144,131 @@
                 margin: 0%;
             }
         }
+    }
 
-        // main-historia
-        .main-historia {
-            @include flex-center-column;
-
-            .historia {
-                margin-left: 1em;
-                margin-right: 1em;
-
-                p {
-                    font-size: 20px;
-                    font-weight: $fw;
-                }
-            }
-
-            h3 {
-                @include flex-item;
-                font-size: 3em;
-                font-weight: $fw;
-                margin: 0;
-                margin-top: 1em;
-                margin-bottom: 1em;
-            }
-        }
-
-        // main-contacto
-        .contacto {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .contenido {
-                h5 {
-                    display: flex;
-                    justify-content: center;
-                    margin-left: 1em;
-                    font-size: 1.5em;
-                    font-weight: $fw;
-                }
-
-                .inti ul {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 1.5em;
-                    font-weight: $fw;
-                    background-color: #6d2b907c;
-                    margin-top: 2em;
-                }
-
-                .ubicacion {
-                    @include flex-center-column;
-                    align-content: center;
-                    background-color: #6d2b907c;
-                    font-size: 1.5em;
-                    margin-bottom: 1em;
-                }
-
-                .mapa {
-                    @include flex-center-column;
-                    width: 150px;
-                    height: 150px;
-                    margin-bottom: 1em;
-                }
-
-                .instagram {
-                    justify-content: center;
-                    background-color: #6d2b907c;
-
-                }
-            }
-        }
-
-        .pie-contactos {
-            height: 30vh;
-            @include flex-item;
+    // main-historia
+    .main-historia {
+        @include flex-center-column;
+        background-image: url(../img/fondomarron.jpg);
+        .historia {
+            margin-left: 1em;
+            margin-right: 1em;
 
             p {
-                justify-content: center;
-                font-size: 1.5em;
-                font-weight: 600;
-                text-orientation: sideways-right;
-            }
-
-            img {
-                width: 100px;
-                height: 100px;
+                font-size: 20px;
+                font-weight: $fw;
             }
         }
 
-        // main-clientes
-        .main-clientes {
-            @include flex-center-column;
-            margin: auto;
-            background-image: none;
-            background-color: #6d2b9066;
+        h3 {
+            @include flex-item;
+            font-size: 3em;
+            font-weight: $fw;
+            margin: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: #f1e6458e;
+        }
+    }
 
-            h6 {
-                @include flex-center-column;
-                font-size: 35px;
+    // main-contacto
+    .contacto {
+        @include flex-center-column;
+        background-image: url(../img/fondomarron.jpg);
+        background-size: auto;
+        margin: 0%;
+
+        .contenido {
+            h5 {
+                @include flex-center;
+                font-size: 2em;
+                color: $fondo1;
                 font-weight: $fw;
                 margin-top: 1em;
-                margin-bottom: 1em;
-                margin-left: 1em;
+                background-color: #f1e6458e;
             }
 
-            .grid-container {
-                @include flex-item;
+            .inti ul {
+                display: flex;
+                justify-content: center;
+                font-size: 1.5em;
+                margin-top: 1em;
+                color: $color;
+            }
+
+            .ubicacion {
+                @include flex-center-column;
+                align-content: center;
+                font-size: 1.5em;
+            }
+
+            .mapa {
+                @include flex-center-column;
+                width: 200px;
+                height: 200px;
+            }
+
+            .instagram {
+                justify-content: center;
+                background-color: #f1e64582;
+            }
+        }
+    }
+
+    .pie-contactos {
+        height: 20vh;
+        @include flex-item;
+
+        p {
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: 600;
+
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    // main-clientes
+    .main-clientes {
+        @include flex-center-column;
+        background-image: url(../img/fondomarron.jpg);
+        background-size: contain;
+        margin: 0%;
+
+        h6 {
+            @include flex-center-column;
+            font-size: 35px;
+            font-weight: 900;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 1em; 
+            color: $color;
+        }
+
+        .grid-container {
+            @include flex-item;
 
 
-                div {
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 10px;
-                    font-size: 30px;
-                    font-weight: 600;
-                    margin-bottom: 1em;
-                    margin-top: 1em;
+            div {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+                font-size: 25px;
+                font-weight: 900;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 1em;
+                margin-top: 1em;
 
-                    img {
-                        height: 50px;
-                        width: 50px;
-                    }
+                img {
+                   height: 80px;
+                    width: 80px;
                 }
             }
         }
     }
+
 }

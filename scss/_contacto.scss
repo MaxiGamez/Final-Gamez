@@ -2,7 +2,7 @@
 .contacto {
     @include flex-center;
     flex-direction: row;
-    background-image: url(../img/campo-trigo.jpg);
+    background-image: url(../img/celiacos.jpg);
     background-size: cover;
    max-width: 100%;
     margin: 0%;
@@ -21,26 +21,32 @@
             font-weight: $fw;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: $color;
-            background-color: #6d2b906e;
+            background-color: #c3b445c4;
             margin-top: 2em;
         }
         .ubicacion{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-direction: row;
-            align-content: center;
-            flex-wrap: nowrap;
-            background-color: #6d2b9058;
-            font-size: 2.5em;
-            color: $color;
-            font-weight: $fw;
+            background-color: #c3b445c4;
+            font-size: 3em;
+            color: #000000;
+            font-weight: 700;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            align-items: center;
+        }
+        .mapa{
+            @include flex-center-column;
+            width: 250px;
+            height: 250px;
             margin-top: 1em;
             margin-bottom: 1em;
         }
         .instagram{
             display: flex;
             justify-content: center;
-            background-color: #6d2b9058;
+            background-color: #c3b445c4;
             margin-bottom: 1em;
         }
     }
